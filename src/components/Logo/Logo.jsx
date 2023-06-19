@@ -13,10 +13,10 @@
  **********************************************************************/
 
 import React from 'react';
-import LogoLeftImage from '../../../src/assets/images/grouplogo_logo_left.svg';
+import LogoLeftImage from '../../../src/assets/images/main_logo_left-side.svg';
 
-import LogoRightImage from '../../../src/assets/images/grouplogo_logo_right.svg';
-import LogoMainTextImage from '../../../src/assets/images/grouplogo_logo_main_text.svg';
+import LogoRightImage from '../../../src/assets/images/main_logo_right-side.svg';
+import LogoMainTextImage from '../../../src/assets/images/main_logo_text.svg';
 import { styled } from '@mui/material/styles';
 
 const GroupLogo = styled('div')({
@@ -56,7 +56,7 @@ const LogoMainText = styled('img')({
   top: `7px`,
 });
 
-function Group1(props) {
+function MainLogo(props) {
   return (
     <GroupLogo className={props.className}>
       <LogoLeft src={LogoLeftImage} loading="lazy" alt={'logo-left'} />
@@ -70,4 +70,4 @@ function Group1(props) {
   );
 }
 
-export default Group1;
+export default MainLogo;
